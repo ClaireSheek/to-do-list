@@ -72,75 +72,56 @@ const populateUserSelection = () => {
   let newArray = arrayOfTodos.filter(function(test) {
     return arrayOfTodos.id == inputValue;
   })
-}
 
-//     // access the ol tag to insert list items
-//     var ol = document.getElementById('todo-list')
-//     // extra: only display 20 to-dos at a time
-//     var shortArray = arrayOfTodos.slice(0, 20);
-  
+//     // access the ol tag to insert new list items
+//     var ol = document.getElementById('todo-list')  
 //     // Loop through array to poplate DOM with each items titles
-//     for (let index = 0; index, shortArray.length; index++) {
+//     for (let index = 0; index, arrayOfTodos.length; index++) {
 //       // create listItem
 //       var listItem = document.createElement("li");
 //       // get array item title
-//       const elementTitle = shortArray[index].title
+//       const elementTitle = arrayOfTodos[index].title
 //       //created text to go inside <li> text </li>
 //       var listItemText = document.createTextNode(elementTitle);
 //       //create button to mark it as done
 //       var addButton = document.createElement("button");
-//       //display completed as red/green
-//     var completedTask = shortArray[index].completed;
-//       if (completedTask){
-//         (listItem.style.color = "#8ed1ce")
-//      }
-//      else{
-//       (listItem.style.color = "#f73e3e")
-//      }
+
 //      //appended the button to li
 //      listItem.appendChild(addButton)
 //       // appended the text to the li
 //       listItem.appendChild(listItemText);
 //       // appeneded the listItem to the ol
 //       ol.appendChild(listItem)
-//     }
-  
-// }
+//     } 
+}
 
-// const showCompleted = () => {
-//   // clear todos
-//   // const clear = localStorage.clear(); location.reload();
-//   //show completed
-//   // var completedTask = arrayOfTodos[index].completed;
-//   // if (completedTask)
-//   var ol = document.getElementById('todo-list')
-//   // extra: only display 20 to-dos at a time
-//   // var shortArray = arrayOfTodos.slice(0, 20);
+const showCompleted = () => {
+  // clear todos
+  // const clear = localStorage.clear(); location.reload();
+  //show completed
+  // var completedTask = arrayOfTodos[index].completed;
+  // if (completedTask)
+  // var ol = document.getElementById('todo-list')
+  // // Loop through array to poplate DOM with each items titles
+  // for (let index = 0; index, arrayOfTodos.length; index++) {
+  //   // create listItem
+  //   var listItem = document.createElement("li");
+  //   // get array item title
+  //   const elementTitle = arrayOfTodos[index].title
+  //   //created text to go inside <li> text </li>
+  //   var listItemText = document.createTextNode(elementTitle);
+  //   //display list of completed todos
+  // var completedTask = arrayOfTodos[index].completed;
+  //   if (completedTask){
+  //      return result (listItem.style.list-styles: symbols(check))
+  //  }
 
-//   // Loop through array to poplate DOM with each items titles
-//   for (let index = 0; index, arrayOfTodos.length; index++) {
-//     // create listItem
-//     var listItem = document.createElement("li");
-//     // get array item title
-//     const elementTitle = arrayOfTodos[index].title
-//     //created text to go inside <li> text </li>
-//     var listItemText = document.createTextNode(elementTitle);
-//     //display completed list
-//   var completedTask = arrayOfTodos[index].completed;
-//     if (completedTask){
-//     ***  (ol.appendChild(listItem))
-//    }
-//    else{
-    
-//    }
-//    //appended the button to li
-//    listItem.appendChild(addButton)
-//     // appended the text to the li
-//     listItem.appendChild(listItemText);
-//     // appeneded the listItem to the ol
-//     // ol.appendChild(listItem)
-//   }
-// }
+  //   // appended the text to the li
+  //   listItem.appendChild(listItemText);
+  //   // appeneded the listItem to the ol
+  //   ol.appendChild(listItem)
+  // }
+}
 
 const showIncomplete = () => {
   // clear todos
