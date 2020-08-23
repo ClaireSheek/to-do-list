@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;700&display=swap" rel="stylesheet"> 
+    <title>To Do</title>
 </head>
-<body>
-
-  <button onclick="fetchTodos()">Fetch Todos</button>
-  <button onclick="logTodos()">Log Todos</button>
-  <button onclick="populateTodos()">Populate Todos</button>
-  <ol id="todo-list">
-    <!-- LIs will go here -->
-  </ol>
- 
-<script src="./app.js"></script>  
+<body onload="fetchTodos();logTodos();">
+    <div class="controls">
+        <!-- I could take out the fetch and log buttons now that I've added "onload" - left them there for homework purposes -->
+        <section class="buttons">
+          <button onclick="fetchTodos()">Fetch Todos</button>
+          <button onclick="logTodos()">Log Todos</button>
+          <button onclick="populateTodos()">Populate Todos</button>
+        </section>
+        <section class="userInput">
+            <input type="number" name="userId" id="userId" placeholder="Search for UserID">
+            <button onclick="populateUserSelection()">Populate User Todos</button>
+            <div>
+                <button onclick="showCompleted()">View Completed</button>
+                <button onclick="showIncomplete()">View Incomplete</button>
+            </div>
+            <button class="clearButton" onclick="clearTodos()">Clear List</button>
+        </section>
+      </div>
+      <main class="listResult">
+        <h1>To-Do List</h1>
+        <ol id="todo-list">
+          <!-- LIs will go here -->
+        </ol>
+      </main> 
+    <script src="./app.js"></script>  
 </body>
-
 </html>

@@ -1,0 +1,43 @@
+// Dummy-Data-To-Do Homework:
+// **DONE**Create a list of todos using the 200 todos retrieved from JSON Placeholder.
+// **DONE**Should have minimum three buttons:
+// **DONE**Fetch Todos - sends request for data
+// **DONE**Log Todos - Logs the todos to the console
+// **DONE**Populate Todos - lists all of the todos for the user to see in the window.
+// **DONE**Make the text appear red if the completed property equals false. Set it to another color if it equals true.
+// **DONE**Center and style your todo list.
+
+// Push Yourself Further:
+// **DONE**Only display 20 todos at a time. 
+// **DONE**Create a button for each item that would mark it as done.
+// Connect that "done" button to a function that uses this to change its completed property to true.
+// Read the JSON Placeholder API to see if you can build an image gallery using their dummy images!
+
+// To-Do-Filtering Homework:
+// **DONE**Create and clone a new repo called: "Todo-Filtering".
+// **DONE**Fetch the same data.
+// **DONE**Store the data in a variable.
+// **DONE**Add an input to take in a number from 1 - 10
+// Add a button that when clicked will:
+// **DONE**Clear the previous todos
+// **Populate it with only todos with the userID that matches the number inputted
+// Store the currently filtered todos in a variable
+// So that you can create two more buttons that when clicked:
+// Removes those todos
+// Shows only todos that are either:
+// completed
+// not completed
+// HINT 1: Copy/paste your code from last class to get started faster.
+
+// HINT 2: When you're removing and repopulating, remember that you're removing them from the DOM and not the array.
+
+// HINT 3: Take these tasks one at a time.
+
+// Push Yourself Further
+// Build another column for Complete todos.
+// Sort the todos on just one click,
+// Show only the selected userID's todos
+// Display the Completed todos in one column
+// Display the incomplete todos in another
+// Annotate
+
